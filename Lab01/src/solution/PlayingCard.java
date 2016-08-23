@@ -15,9 +15,9 @@ public class PlayingCard
 {
     // Fields
     // TODO: Declare a SuitsAndRanks.Suit variable named suit;
-
+    public static SuitsAndRanks.Suit = suit;
     // TODO: Declare a SuitsAndRanks.Rank variable named rank;
-
+    public static SuitsAndRanks.Rank = rank;
     /**
      * Constructor - each card assigned a rank and suit when created by the Deck
      * class.
@@ -25,12 +25,12 @@ public class PlayingCard
      */
     // TODO: Create constructor with first parameter 'rank' and second
     // parameter 'suit'
-    public PlayingCard(/* put parameters here */)
+    public PlayingCard(rank, suit)
     {
         // TODO: Assign suit passed via constructor to field suit
-
+        SuitsAndRanks.Suit = Suit;
         // TODO: Assign rank passed via constructor to field rank
-
+        SuitsAndRanks.Suit = rank;
     }
 
     /**
@@ -60,6 +60,7 @@ public class PlayingCard
     // TODO: Write a setter method for this card's Suit.
     public void setSuit(SuitsAndRanks.Suit suit)
     {
+        suit = this.suit;
     }
 
     /**
@@ -69,7 +70,10 @@ public class PlayingCard
      *            The new rank for this card
      */
     // TODO: Write a setter method for this card's Rank.
-
+    public void setRank(SuitsAndRanks.Suit rank)
+    {
+        rank = this.rank;
+    }
     /*
      * TODO: Override the toString method to return a string in the following
      * format: "Rank Suit".
@@ -82,6 +86,6 @@ public class PlayingCard
     @Override
     public String toString()
     {
-        return "";
+        return "Rank Suit";
     }
 }

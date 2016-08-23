@@ -11,8 +11,8 @@ package solution;
  * to add code wherever you see a TODO marker to implement the same
  * functionality for Rank.
  * 
- * @author Mitch Parry
- * @version May 6, 2013
+ * @author Dillingham, Jace
+ * @version August 23, 2016
  */
 public class SuitsAndRanks 
 {
@@ -32,7 +32,11 @@ public class SuitsAndRanks
      * order.
      */
     // TODO: Create enum for Rank (ie TWO, THREE, ..., ACE)
-
+    public enum Rank
+    {
+        Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, 
+        Jack, Queen, King, Ace
+    };
     // TODO: Create a public static array of Suits named 'suits' 
     // containing all the suits.
     public static Suit[] suits = Suit.values();
@@ -42,9 +46,10 @@ public class SuitsAndRanks
     
     // TODO: Create a public static array of Ranks named 
     // 'ranks' containing all ranks.
-
+    public static Ranks[] ranks = Rank.values();
+        
     //TODO: Create a public static constant for the number of Ranks.
-
+    public static final int NUMRANKS = 13;
 
     /**
      * fetchSuit returns the Suit at a given index.
@@ -69,5 +74,8 @@ public class SuitsAndRanks
      * @return  The Rank at that index
      */
     //TODO: Create a public static method named 'featchRank'
-
+    public static Ranks fetchRanks(int index)
+    {
+        return ranks[index % NUMRANKS];
+    }
 }

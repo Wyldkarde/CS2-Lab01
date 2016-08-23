@@ -9,8 +9,8 @@ import java.util.Random;
 
 /**
  * The Deck represents a 52 PlayingCards in a deck.
- * @version August 13, 2013
- * @author Mitch Parry
+ * @version August 23, 2016
+ * @author Dillingham, Jace
  */
 public class Deck 
 {
@@ -45,6 +45,15 @@ public class Deck
      */
     public void initialize() 
     {
+        new Deck[][] = ;
+        
+        for (int i = 0; i < Deck[i].length; i++);
+        {
+            for (int j = 0; j < Deck[i][j].length; j++);
+            Deck[i][j] = rank[j];
+            
+            
+        }
         // TODO: Create the ArrayList that will hold the 52 cards
         
         // TODO: Add code here to create and add all cards to the deck.
