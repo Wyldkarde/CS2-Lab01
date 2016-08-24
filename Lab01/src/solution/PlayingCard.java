@@ -8,29 +8,36 @@ package solution;
  * This class as given represents a playing card with Suits but no Rank. Your
  * job is to implement Ranks by creating the code described at the TODO markers.
  * 
- * @author Mitch Parry
- * @version May 6, 2013
+ * @author Dillingham, Jace
+ * @version August 23, 2016
  */
 public class PlayingCard
 {
     // Fields
     // TODO: Declare a SuitsAndRanks.Suit variable named suit;
-    public static SuitsAndRanks.Suit = suit;
+    public SuitsAndRanks.Suit suit;
     // TODO: Declare a SuitsAndRanks.Rank variable named rank;
-    public static SuitsAndRanks.Rank = rank;
+    public SuitsAndRanks.Rank rank;
     /**
      * Constructor - each card assigned a rank and suit when created by the Deck
      * class.
      * 
-     */
+     **/
+    
     // TODO: Create constructor with first parameter 'rank' and second
     // parameter 'suit'
+    
+    /**
+     * @param rank var for rank
+     * @param suit var for suit
+     */
+
     public PlayingCard(rank, suit)
-    {
+    
         // TODO: Assign suit passed via constructor to field suit
-        SuitsAndRanks.Suit = Suit;
+        setSuit(suit);
         // TODO: Assign rank passed via constructor to field rank
-        SuitsAndRanks.Suit = rank;
+        setRank(rank);
     }
 
     /**
@@ -60,7 +67,7 @@ public class PlayingCard
     // TODO: Write a setter method for this card's Suit.
     public void setSuit(SuitsAndRanks.Suit suit)
     {
-        suit = this.suit;
+        this.suit = suit;
     }
 
     /**
@@ -70,9 +77,9 @@ public class PlayingCard
      *            The new rank for this card
      */
     // TODO: Write a setter method for this card's Rank.
-    public void setRank(SuitsAndRanks.Suit rank)
+    public void setRank(SuitsAndRanks.Rank rank)
     {
-        rank = this.rank;
+        this.rank = rank;
     }
     /*
      * TODO: Override the toString method to return a string in the following
@@ -86,6 +93,6 @@ public class PlayingCard
     @Override
     public String toString()
     {
-        return "Rank Suit";
+        return "rank suit";
     }
 }

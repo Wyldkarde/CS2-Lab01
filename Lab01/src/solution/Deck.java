@@ -45,14 +45,13 @@ public class Deck
      */
     public void initialize() 
     {
-        new Deck[][] = ;
+        PlayingCard[] deck = new PlayingCard[52];
         
-        for (int i = 0; i < Deck[i].length; i++);
+        for (int i = 0; i < 52; i++)
         {
-            for (int j = 0; j < Deck[i][j].length; j++);
-            Deck[i][j] = rank[j];
-            
-            
+            SuitsAndRanks.Suit s = SuitsAndRanks.fetchSuit(i);
+            SuitsAndRanks.Rank r = SuitsAndRanks.fetchRank(i);
+            deck[i] = new PlayingCard(s, r);
         }
         // TODO: Create the ArrayList that will hold the 52 cards
         

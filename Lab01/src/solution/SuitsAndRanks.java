@@ -46,7 +46,7 @@ public class SuitsAndRanks
     
     // TODO: Create a public static array of Ranks named 
     // 'ranks' containing all ranks.
-    public static Ranks[] ranks = Rank.values();
+    public static Rank[] ranks = Rank.values();
         
     //TODO: Create a public static constant for the number of Ranks.
     public static final int NUMRANKS = 13;
@@ -70,12 +70,12 @@ public class SuitsAndRanks
      * If the index is greater than the number of suits,
      * wrap the index back to zero using the mod operator.
      * 
-     * @param index Index into the 'ranks' array
+     * @param index1 Index into the 'ranks' array
      * @return  The Rank at that index
      */
     //TODO: Create a public static method named 'featchRank'
-    public static Ranks fetchRanks(int index)
+    public static Rank fetchRanks(int index1)
     {
-        return ranks[index % NUMRANKS];
+        return ranks[index1 % NUMRANKS];
     }
 }
